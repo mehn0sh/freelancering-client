@@ -26,7 +26,7 @@ const AuthContainer = () => {
   const sendOTPHandler = async (data) => {
     try {
       const { message } = await mutateAsync(data);
-      toast.success(message);
+      toast.success("خوش امدید");
       setStep(2);
     } catch (error) {
       toast.error(error?.response?.data?.message);
